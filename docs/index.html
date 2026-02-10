@@ -160,9 +160,9 @@ footer nav a {
 <body>
 
 <div class="lang-bar">
-  <button class="active" onclick="setLang('en')">EN</button>
-  <button onclick="setLang('zh-Hans')">简体</button>
-  <button onclick="setLang('zh-Hant')">繁體</button>
+  <button class="active" onclick="setLang('en', this)">EN</button>
+  <button onclick="setLang('zh-Hans', this)">简体</button>
+  <button onclick="setLang('zh-Hant', this)">繁體</button>
 </div>
 
 <!-- ═══ ENGLISH ═══ -->
@@ -352,13 +352,14 @@ footer nav a {
 </div>
 
 <script>
-function setLang(lang) {
+function setLang(lang, btnElement) {
   document.querySelectorAll('[lang]').forEach(el => el.style.display = 'none');
   document.querySelectorAll('[lang="' + lang + '"]').forEach(el => el.style.display = 'block');
   document.querySelectorAll('.lang-bar button').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
+  if (btnElement) {
+    btnElement.classList.add('active');
+  }
   document.documentElement.lang = lang;
-  // Persist choice
   try { localStorage.setItem('liji_lang', lang); } catch(e) {}
 }
 // Restore saved language or detect from browser
