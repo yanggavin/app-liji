@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liji 禮記 — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --vermilion: #C53D2C;
+  --gold: #B8860B;
+  --ink: #1a0f0e;
+  --bg: #faf8f5;
+  --card: #ffffff;
+  --text: #2c1810;
+  --muted: #8a7a72;
+  --border: rgba(0,0,0,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+.lang-bar {
+  text-align: right;
+  padding: 16px 24px 0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.lang-bar button {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  margin-left: 4px;
+  transition: all 0.2s;
+}
+.lang-bar button:hover, .lang-bar button.active {
+  background: var(--vermilion);
+  color: white;
+  border-color: var(--vermilion);
+}
+header {
+  text-align: center;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+.brand { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--gold); }
+h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 8px 0 4px;
+}
+.subtitle { font-size: 13px; color: var(--muted); }
+.content { padding: 32px 0 64px; }
+.section { margin-bottom: 32px; }
+.section h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section h2::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background: var(--vermilion);
+  border-radius: 2px;
+}
+.section p, .section li {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 6px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 12px 0;
+}
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+th {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+td { color: var(--text); }
+a { color: var(--vermilion); text-decoration: none; }
+a:hover { text-decoration: underline; }
+footer {
+  text-align: center;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+footer nav { margin-bottom: 12px; }
+footer nav a { margin: 0 12px; font-size: 13px; font-weight: 500; }
+[lang] { display: none; }
+[lang="en"] { display: block; }
+</style>
+</head>
+<body>
+
+<div class="lang-bar">
+  <button class="active" onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh-Hans')">简体</button>
+  <button onclick="setLang('zh-Hant')">繁體</button>
+</div>
+
+<!-- ═══ ENGLISH ═══ -->
+<div lang="en">
+<header class="container">
+  <div class="brand">◆ LIJI ◆</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Effective date: February 10, 2025</p>
+</header>
+<div class="container content">
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>Liji (禮記) ("the App") is developed by Gavin Yang ("we", "us", "our"). We take your privacy seriously. This Privacy Policy explains what data we collect, how we use it, and your choices regarding your information.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data We Collect</h2>
+    <table>
+      <tr><th>Data</th><th>Source</th><th>Purpose</th></tr>
+      <tr><td>Person names</td><td>Your input</td><td>Identify gift recipients/senders</td></tr>
+      <tr><td>Transaction details</td><td>Your input</td><td>Record amounts, occasions, dates, notes</td></tr>
+      <tr><td>Relationship tags</td><td>Your input</td><td>Categorise contacts (Family, Friend, etc.)</td></tr>
+      <tr><td>Contact identifier</td><td>Contacts (optional)</td><td>Link to your address book for quick lookup</td></tr>
+      <tr><td>Purchase status</td><td>App Store</td><td>Determine ad-free entitlement</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Data Storage</h2>
+    <p>All your personal data (names, transactions, tags) is stored <strong>locally on your device</strong> using Apple's SwiftData framework. If you enable iCloud Sync, your data is also stored in your <strong>private iCloud account</strong> via Apple's CloudKit. We do not have access to your iCloud data.</p>
+    <p>We do not operate any external servers or databases. Your data never leaves your device or iCloud account.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contacts Access</h2>
+    <p>The App may request access to your Contacts to help you quickly find people when recording gifts. This access is <strong>entirely optional</strong>. Contact data is only used locally for name lookup and is never transmitted externally.</p>
+  </div>
+
+  <div class="section">
+    <h2>Advertising</h2>
+    <p>The free (international) version of Liji displays banner ads provided by <strong>Google AdMob</strong>. AdMob may collect device identifiers and usage data to serve ads. For details, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    <p>We use Apple's <strong>App Tracking Transparency</strong> framework to request your permission before any tracking occurs. You can deny tracking and the App will continue to function normally with non-personalised ads.</p>
+    <p>The paid version (China App Store) contains <strong>no advertising</strong> and does not request tracking permission.</p>
+  </div>
+
+  <div class="section">
+    <h2>In-App Purchases</h2>
+    <p>Purchases are processed entirely by Apple through the App Store. We do not collect or store any payment information. Purchase status (ad-free entitlement) is verified via Apple's StoreKit framework.</p>
+  </div>
+
+  <div class="section">
+    <h2>Analytics</h2>
+    <p>We do <strong>not</strong> use any third-party analytics or crash reporting SDKs. We do not collect usage analytics, device information, or crash logs.</p>
+  </div>
+
+  <div class="section">
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your Rights</h2>
+    <p>Since all data is stored locally on your device and in your private iCloud account, you have full control:</p>
+    <ul>
+      <li><strong>Delete</strong> — Delete any record, person, or tag within the App, or delete the App to remove all local data.</li>
+      <li><strong>Export</strong> — Use the CSV export feature to download a copy of your data.</li>
+      <li><strong>iCloud</strong> — Manage or delete synced data through your iCloud settings.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@liji-app.newtree.tech">support@liji-app.newtree.tech</a>.</p>
+  </div>
+</div>
+<footer class="container">
+  <nav>
+    <a href="index.html">Support</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+  <p>&copy; 2025 Gavin Yang. All rights reserved.</p>
+</footer>
+</div>
+
+<!-- ═══ 简体中文 ═══ -->
+<div lang="zh-Hans">
+<header class="container">
+  <div class="brand">◆ 礼记 ◆</div>
+  <h1>隐私政策</h1>
+  <p class="subtitle">生效日期：2025 年 2 月 10 日</p>
+</header>
+<div class="container content">
+  <div class="section">
+    <h2>引言</h2>
+    <p>礼记（"本应用"）由 Gavin Yang（"我们"）开发。我们非常重视您的隐私。本隐私政策说明我们收集哪些数据、如何使用这些数据以及您对个人信息的选择权。</p>
+  </div>
+
+  <div class="section">
+    <h2>我们收集的数据</h2>
+    <table>
+      <tr><th>数据</th><th>来源</th><th>用途</th></tr>
+      <tr><td>人物姓名</td><td>您的输入</td><td>识别送礼/收礼对象</td></tr>
+      <tr><td>交易详情</td><td>您的输入</td><td>记录金额、场合、日期、备注</td></tr>
+      <tr><td>关系标签</td><td>您的输入</td><td>分类联系人（亲戚、朋友等）</td></tr>
+      <tr><td>通讯录标识</td><td>通讯录（可选）</td><td>关联通讯录以快速查找</td></tr>
+      <tr><td>购买状态</td><td>App Store</td><td>确认去广告权益</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>数据存储</h2>
+    <p>您的所有个人数据（姓名、交易、标签）均<strong>存储在您的设备本地</strong>，使用 Apple 的 SwiftData 框架。如果您开启 iCloud 同步，数据还会存储在您的<strong>私人 iCloud 账户</strong>中。我们无法访问您的 iCloud 数据。</p>
+    <p>我们不运营任何外部服务器或数据库。您的数据不会离开您的设备或 iCloud 账户。</p>
+  </div>
+
+  <div class="section">
+    <h2>通讯录访问</h2>
+    <p>本应用可能请求访问您的通讯录，以便在记录礼金时快速查找姓名。此权限<strong>完全可选</strong>。通讯录数据仅在本地用于姓名查找，绝不会传输到外部。</p>
+  </div>
+
+  <div class="section">
+    <h2>广告</h2>
+    <p>礼记国际免费版包含由 <strong>Google AdMob</strong> 提供的横幅广告。AdMob 可能收集设备标识符和使用数据以投放广告。详情请参阅 <a href="https://policies.google.com/privacy" target="_blank">Google 隐私政策</a>。</p>
+    <p>我们使用 Apple 的<strong>应用追踪透明度</strong>框架在追踪前征求您的许可。您可以拒绝追踪，应用将正常运行并展示非个性化广告。</p>
+    <p>付费版（中国区 App Store）<strong>不包含任何广告</strong>，也不会请求追踪权限。</p>
+  </div>
+
+  <div class="section">
+    <h2>应用内购买</h2>
+    <p>购买完全通过 Apple App Store 处理。我们不收集或存储任何支付信息。购买状态（去广告权益）通过 Apple 的 StoreKit 框架验证。</p>
+  </div>
+
+  <div class="section">
+    <h2>数据分析</h2>
+    <p>我们<strong>不使用</strong>任何第三方分析或崩溃报告 SDK。我们不收集使用统计、设备信息或崩溃日志。</p>
+  </div>
+
+  <div class="section">
+    <h2>儿童隐私</h2>
+    <p>本应用不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。</p>
+  </div>
+
+  <div class="section">
+    <h2>您的权利</h2>
+    <p>由于所有数据存储在您的设备本地和私人 iCloud 账户中，您拥有完全控制权：</p>
+    <ul>
+      <li><strong>删除</strong> — 在应用内删除任何记录、人物或标签，或删除应用以清除所有本地数据。</li>
+      <li><strong>导出</strong> — 使用 CSV 导出功能下载数据副本。</li>
+      <li><strong>iCloud</strong> — 通过 iCloud 设置管理或删除同步数据。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>政策变更</h2>
+    <p>我们可能会不时更新本隐私政策。变更将在本页面发布，并更新生效日期。</p>
+  </div>
+
+  <div class="section">
+    <h2>联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问，请联系 <a href="mailto:support@liji-app.newtree.tech">support@liji-app.newtree.tech</a>。</p>
+  </div>
+</div>
+<footer class="container">
+  <nav>
+    <a href="index.html">支持</a>
+    <a href="terms.html">服务条款</a>
+  </nav>
+  <p>&copy; 2025 Gavin Yang. 保留所有权利。</p>
+</footer>
+</div>
+
+<!-- ═══ 繁體中文 ═══ -->
+<div lang="zh-Hant">
+<header class="container">
+  <div class="brand">◆ 禮記 ◆</div>
+  <h1>隱私權政策</h1>
+  <p class="subtitle">生效日期：2025 年 2 月 10 日</p>
+</header>
+<div class="container content">
+  <div class="section">
+    <h2>引言</h2>
+    <p>禮記（「本應用程式」）由 Gavin Yang（「我們」）開發。我們非常重視您的隱私。本隱私權政策說明我們收集哪些資料、如何使用這些資料以及您對個人資訊的選擇權。</p>
+  </div>
+
+  <div class="section">
+    <h2>我們收集的資料</h2>
+    <table>
+      <tr><th>資料</th><th>來源</th><th>用途</th></tr>
+      <tr><td>人物姓名</td><td>您的輸入</td><td>識別送禮／收禮對象</td></tr>
+      <tr><td>交易詳情</td><td>您的輸入</td><td>記錄金額、場合、日期、備註</td></tr>
+      <tr><td>關係標籤</td><td>您的輸入</td><td>分類聯絡人（親戚、朋友等）</td></tr>
+      <tr><td>通訊錄標識</td><td>通訊錄（可選）</td><td>關聯通訊錄以快速查找</td></tr>
+      <tr><td>購買狀態</td><td>App Store</td><td>確認去廣告權益</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>資料儲存</h2>
+    <p>您的所有個人資料（姓名、交易、標籤）均<strong>儲存在您的裝置本機</strong>，使用 Apple 的 SwiftData 框架。如果您開啟 iCloud 同步，資料還會儲存在您的<strong>私人 iCloud 帳戶</strong>中。我們無法存取您的 iCloud 資料。</p>
+    <p>我們不營運任何外部伺服器或資料庫。您的資料不會離開您的裝置或 iCloud 帳戶。</p>
+  </div>
+
+  <div class="section">
+    <h2>通訊錄存取</h2>
+    <p>本應用程式可能請求存取您的通訊錄，以便在記錄禮金時快速查找姓名。此權限<strong>完全可選</strong>。通訊錄資料僅在本機用於姓名查找，絕不會傳輸到外部。</p>
+  </div>
+
+  <div class="section">
+    <h2>廣告</h2>
+    <p>禮記國際免費版包含由 <strong>Google AdMob</strong> 提供的橫幅廣告。AdMob 可能收集裝置識別碼和使用資料以投放廣告。詳情請參閱 <a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a>。</p>
+    <p>我們使用 Apple 的<strong>應用程式追蹤透明度</strong>框架在追蹤前徵求您的許可。您可以拒絕追蹤，應用程式將正常運作並展示非個人化廣告。</p>
+    <p>付費版（中國區 App Store）<strong>不包含任何廣告</strong>，也不會請求追蹤權限。</p>
+  </div>
+
+  <div class="section">
+    <h2>應用程式內購買</h2>
+    <p>購買完全透過 Apple App Store 處理。我們不收集或儲存任何付款資訊。購買狀態（去廣告權益）透過 Apple 的 StoreKit 框架驗證。</p>
+  </div>
+
+  <div class="section">
+    <h2>資料分析</h2>
+    <p>我們<strong>不使用</strong>任何第三方分析或當機報告 SDK。我們不收集使用統計、裝置資訊或當機記錄。</p>
+  </div>
+
+  <div class="section">
+    <h2>兒童隱私</h2>
+    <p>本應用程式不面向 13 歲以下兒童。我們不會故意收集兒童的個人資訊。</p>
+  </div>
+
+  <div class="section">
+    <h2>您的權利</h2>
+    <p>由於所有資料儲存在您的裝置本機和私人 iCloud 帳戶中，您擁有完全控制權：</p>
+    <ul>
+      <li><strong>刪除</strong> — 在應用程式內刪除任何記錄、人物或標籤，或刪除應用程式以清除所有本機資料。</li>
+      <li><strong>匯出</strong> — 使用 CSV 匯出功能下載資料副本。</li>
+      <li><strong>iCloud</strong> — 透過 iCloud 設定管理或刪除同步資料。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>政策變更</h2>
+    <p>我們可能會不時更新本隱私權政策。變更將在本頁面發佈，並更新生效日期。</p>
+  </div>
+
+  <div class="section">
+    <h2>聯絡我們</h2>
+    <p>如果您對本隱私權政策有任何疑問，請聯繫 <a href="mailto:support@liji-app.newtree.tech">support@liji-app.newtree.tech</a>。</p>
+  </div>
+</div>
+<footer class="container">
+  <nav>
+    <a href="index.html">支援</a>
+    <a href="terms.html">服務條款</a>
+  </nav>
+  <p>&copy; 2025 Gavin Yang. 保留所有權利。</p>
+</footer>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[lang]').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('[lang="' + lang + '"]').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.lang-bar button').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('liji_lang', lang); } catch(e) {}
+}
+(function() {
+  var saved = null;
+  try { saved = localStorage.getItem('liji_lang'); } catch(e) {}
+  if (!saved) {
+    var nav = (navigator.language || '').toLowerCase();
+    if (nav.startsWith('zh-tw') || nav.startsWith('zh-hant') || nav === 'zh-hk' || nav === 'zh-mo')
+      saved = 'zh-Hant';
+    else if (nav.startsWith('zh'))
+      saved = 'zh-Hans';
+    else
+      saved = 'en';
+  }
+  document.querySelectorAll('[lang]').forEach(function(el) { el.style.display = 'none'; });
+  document.querySelectorAll('[lang="' + saved + '"]').forEach(function(el) { el.style.display = 'block'; });
+  document.querySelectorAll('.lang-bar button').forEach(function(btn) {
+    btn.classList.toggle('active', btn.textContent.trim() ===
+      (saved === 'en' ? 'EN' : saved === 'zh-Hans' ? '简体' : '繁體'));
+  });
+  document.documentElement.lang = saved;
+})();
+</script>
+</body>
+</html>
