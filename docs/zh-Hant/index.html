@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C53D2C'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='serif' font-size='22' fill='white'%3E禮%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C53D2C'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='serif' font-size='22' fill='white'%3E禮%3C/text%3E%3C/svg%3E">
+<title>禮記 — 支援</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --vermilion: #C53D2C;
+  --gold: #B8860B;
+  --ink: #1a0f0e;
+  --bg: #faf8f5;
+  --card: #ffffff;
+  --text: #2c1810;
+  --muted: #8a7a72;
+  --border: rgba(0,0,0,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+
+/* Language Switcher */
+.lang-bar {
+  text-align: right;
+  padding: 16px 24px 0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.lang-bar a {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 4px;
+  transition: all 0.2s;
+  display: inline-block;
+}
+.lang-bar a:hover, .lang-bar a.active {
+  background: var(--vermilion);
+  color: white;
+  border-color: var(--vermilion);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 8px 0 4px;
+}
+.tagline {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Content */
+.content { padding: 32px 0 64px; }
+.section { margin-bottom: 36px; }
+.section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section h2::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background: var(--vermilion);
+  border-radius: 2px;
+}
+.section p, .section li {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 6px; }
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card p { font-size: 14px; color: var(--muted); }
+
+a { color: var(--vermilion); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.email-link {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--vermilion);
+  color: white !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none !important;
+  transition: opacity 0.2s;
+}
+.email-link:hover { opacity: 0.85; }
+
+footer {
+  text-align: center;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+footer nav { margin-bottom: 12px; }
+footer nav a {
+  margin: 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="lang-bar">
+  <a href="../en/index.html">EN</a>
+  <a href="../zh-Hans/index.html">简体</a>
+  <a href="../zh-Hant/index.html" class="active">繁體</a>
+</div>
+
+<header class="container">
+  <div class="brand">◆ 禮記 ◆</div>
+  <h1>禮記</h1>
+  <p class="tagline">禮尚往來</p>
+</header>
+<div class="container content">
+  <div class="section">
+    <h2>關於禮記</h2>
+    <p>禮記是一款精心設計的 iOS 應用程式，用於記錄人情往來——中華傳統的禮尚往來文化。記錄您送出和收到的禮金與禮物，查看與每個人的淨額，不再遺忘任何重要場合。</p>
+  </div>
+
+  <div class="section">
+    <h2>功能特色</h2>
+    <div class="card">
+      <h3>📊 總覽面板</h3>
+      <p>一目了然地查看送禮總額、收禮總額、淨額、往來最多的聯絡人和最近記錄。</p>
+    </div>
+    <div class="card">
+      <h3>📝 交易記錄</h3>
+      <p>新增、編輯、搜尋和篩選禮金記錄。記錄金額、場合、日期和備註。</p>
+    </div>
+    <div class="card">
+      <h3>👤 人物目錄</h3>
+      <p>查看每個人的往來記錄、常聯繫人物以及關係標籤（親戚、朋友、同事等）。</p>
+    </div>
+    <div class="card">
+      <h3>☁️ iCloud 同步</h3>
+      <p>在您的所有 Apple 裝置間同步資料。</p>
+    </div>
+    <div class="card">
+      <h3>📤 CSV 匯出</h3>
+      <p>將所有記錄匯出為 CSV 檔案，便於備份或分析。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>去除廣告</h2>
+    <p>國際版（免費下載）包含橫幅廣告，您可以透過一次性內購去除所有廣告。中國區為付費應用程式，無任何廣告。</p>
+  </div>
+
+  <div class="section">
+    <h2>恢復購買</h2>
+    <p>如果您之前購買了「去除廣告」並重新安裝了應用程式，請前往 <strong>設定 → 恢復購買</strong> 恢復無廣告狀態。請確保使用相同的 Apple ID 登入。</p>
+  </div>
+
+  <div class="section">
+    <h2>聯絡與支援</h2>
+    <p>如有疑問、意見回饋或需要協助，歡迎聯繫我們。</p>
+    <p style="margin-top:16px"><a class="email-link" href="mailto:support@liji-app.newtree.tech">support@liji-app.newtree.tech</a></p>
+  </div>
+</div>
+<footer class="container">
+  <nav>
+    <a href="privacy.html">隱私權政策</a>
+    <a href="terms.html">服務條款</a>
+  </nav>
+  <p>© 2025 Gavin Yang. 保留所有權利。</p>
+</footer>
+</body>
+</html>
